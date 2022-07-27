@@ -53,3 +53,19 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
+
+/* BODY - ACTIONS*/
+.ld-table >.body >.row >.actions{
+
+}
+
+.ld-table >.body >.row >.actions >.edit{
+    color: var(--ld-color-primary);
+    margin-right: 5px;
+    cursor: pointer;    
+}
+
+.ld-table >.body >.row >.actions >.delete{
+    color: var(--ld-color-danger);
+    cursor: pointer;        
+}

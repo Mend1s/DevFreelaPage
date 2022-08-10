@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="style/pages/login.css">
 
     <!-- TRUMPS -->
+
+    <!-- SCRIPTS -->
+    <script src="scripts/login.js"></script>
+
 </head>
 
 <body>
@@ -56,9 +60,7 @@
             </header>
 
             <main class="main-content">
-                <div class="left">
-
-                    <span class="steps">PASSO 1 DE 2</span>
+                <form class="left" onsubmit="cadastrar()">
 
                     <h1 class="main-title">
                         <span class="up">Olá!</span>
@@ -88,7 +90,7 @@
                     <input required id="password" type="password" class="ld-input" placeholder="Senha">    
 
                     <button type="submit" class="ld-button">Continuar</button>
-                </div>
+                </form>
                 <div class="right">
                     <img class="image" alt="Fundo de decoração com 3 cubos com fundo gradient das cores do arco-iris" src="assets/image/bg-cubes.png">
                 </div>

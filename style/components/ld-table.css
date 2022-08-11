@@ -16,6 +16,7 @@
     grid-template-columns: 2fr 1fr 200px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-bottom: 5px;
 }
 
 /* BODY */

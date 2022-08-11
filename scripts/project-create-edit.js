@@ -37,6 +37,20 @@ function createOrEdit() {
 
 window.onload = function(){
     setScreenTypesTexts();
+    fillInputs();
+}
+
+function fillInputs(){
+    if(screenType === 'edit'){
+        fetch(`https://62e9b89901787ec7121bb21c.mockapi.io/api/projects/${params.id}`)
+        .then(response => response.json())
+        .then(project => {
+            document.querySelector("#title").value = project.title;
+            document.querySelector("#totalCost").value = project.totalCost;
+            document.querySelector("#description").value = project.description;
+        })
+    }
+
 }
 
 function setScreenTypesTexts(){

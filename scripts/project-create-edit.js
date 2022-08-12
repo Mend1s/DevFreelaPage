@@ -25,12 +25,28 @@ function createOrEdit() {
     .then(response => response.json())
     .then(response => {
         if(screenType === 'edit'){
-            alert('Editado com sucesso!');
+            Swal.fire({
+                title: 'Jóia!',
+                text: "Editado com sucesso!",
+                icon: 'success',
+                confirmButtonText: 'Ok!'
+              }).then((result) => {
+                if (result.isConfirmed) {            
+                    window.location.href = "list.html";    
+                }
+            })
         } else {
-            alert('Cadastrado com sucesso!')
+            Swal.fire({
+                title: 'Top!',
+                text: "Cadastrado com sucesso!",
+                icon: 'success',
+                confirmButtonText: 'Ok!'
+              }).then((result) => {
+                if (result.isConfirmed) {            
+                    window.location.href = "list.html";    
+                }
+            })
         }
-
-        window.location.href = "list.html";
     })
     
 }

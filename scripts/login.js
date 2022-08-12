@@ -41,12 +41,6 @@ function cadastrar() {
     })
     .then(response => response.json())
     .then(response => {
-        Swal.fire(
-            'Bom trabalho!',
-            'Cadastrado com sucesso!',
-            'success'
-        );
-
         Swal.fire({
             title: 'Bom trabalho!',
             text: "Cadastrado com sucesso!",
@@ -60,7 +54,6 @@ function cadastrar() {
         
                 window.location.href = "list.html";    
             }
-          })
+        })
     })
-    
 }
